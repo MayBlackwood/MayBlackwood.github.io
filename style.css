@@ -1,0 +1,253 @@
+@font-face {
+    font-family: 'Pangolin';
+    src:url("fonts/Pangolin/Pangolin-Regular.ttf");
+    
+    font-family: 'Philosopher';
+    src:url("fonts/Philosopher/Philosopher-Regular.ttf");
+    
+    font-family: 'Philosopher-Bold';
+    src:url("fonts/Philosopher/Philosopher-Bold.ttf");
+    
+    font-family: 'Pacifico';
+    src:url("fonts/Pacifico/Pacifico-Regular.ttf");
+}
+
+body {
+    background :#d1c4df;
+    margin:0;
+    padding: 0;
+}
+
+.header {
+    background:linear-gradient(to bottom, #d85c71,#d1c4df);
+    height:100px;
+    width:auto;   
+    margin-top:-35px;
+}
+
+.header h1{
+    font-size:3em;
+    font-family: 'Pacifico';
+    text-align: center;
+    vertical-align: bottom;
+    color: rgb(60, 17, 71);
+}
+
+.topbar {
+    width:70%;
+    margin-left:15%;
+    margin-right:15%;
+    height:50px;
+}
+
+.logo {
+    width:75px;
+    height:51px;
+    background:url("images/logo.png") no-repeat;    
+}
+
+ul {
+    display: block;
+    margin: 5px;
+    padding: 0px;
+    list-style: none;
+    margin-left:0px; 
+    float:left;
+}
+
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+
+ul.menu > li > a {
+    display:inline-block;
+    padding: 10px;
+    color: black;
+    margin-top:10px;       
+    text-decoration:none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right:10px;
+    font-size:1.5em;    
+}
+
+ul.menu > li > a:hover {
+    color: white;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 160px;
+    top: 57px;
+    left: 0px;
+    background-color: white;
+    border-top: 2px solid #d85c71;
+    z-index:1;    
+    box-shadow:0 0 20px black;
+}
+
+ul.submenu > li {
+    display: block;
+}
+
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: black;
+    background-color: #d1c4df;
+    text-decoration: none;
+    font-size:1.1em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    border-top:2px solid #d85c71;
+}
+
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+    color:white;
+    opacity: 0.8;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+.topbar > .basket {
+    float: right;
+}
+
+.topbar> .basket > a {
+    display:inline-block;
+    padding: 10px;
+    color: black;
+    text-shadow: 0 0 10px #a3112e;
+    margin-top:10px;       
+    text-decoration:none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    font-size:1.5em;
+}
+
+.basket-img {
+    display:block;
+    float:right;
+    height:60px;
+    width:60px;
+    background:url("images/basket.png") no-repeat;
+    background-size: contain;
+}
+
+.topbar> .basket:hover > a {
+    color: white;    
+    text-shadow: 0 0 10px #a3112e;
+}
+
+.topbar> .basket:hover > .basket-img {
+    background:url("images/basket-hov.png") no-repeat;
+    background-size: contain;
+}
+
+.content {
+    width:70%;    
+    min-height: 500px;
+    margin:auto;
+    background-color:#dbe0e4;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    border-top:4px solid black;
+}
+
+.flex-el {
+    width:250px;
+    height:250px;
+    margin:20px;
+    font-size:12px;
+    display:inline-block;
+    vertical-align:middle;
+    position: relative;
+    box-shadow:0 0 20px #6e6e6e;
+}
+
+.insideText {
+    width:250px;
+    position:absolute;
+    top:50px; 
+}
+
+.zephyr > .insideText > p,
+.teaDes > .insideText > p,
+.jar > .insideText > p,
+.pie > .insideText > p,
+.cake > .insideText > p,
+.stickDes > .insideText > p,
+.marsh > .insideText > p {
+    font-family: 'Pacifico';
+    font-size:3em;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.2em;
+}
+
+.content p > a {
+    text-decoration: none;
+    color:rgb(9, 3, 43);
+    text-shadow: 0 0 15px #88011d;
+}
+
+.content p:hover > a {
+    color:rgba(13, 3, 71, 0.432);
+    font-weight: bold;
+}
+
+.zephyr {
+    background-image: url("images/zephyr.png");
+    background-repeat:no-repeat;
+}
+
+.marsh {
+    background-image: url("images/marsh.png");
+    background-repeat:no-repeat;
+}
+
+.teaDes {
+    background-image: url("images/teaDes.png");
+    background-repeat:no-repeat;
+}
+
+.jar {
+    background-image: url("images/jar.png");
+    background-repeat:no-repeat;
+}
+
+.pie {
+    background-image: url("images/pie.png");
+    background-repeat:no-repeat;
+}
+
+.cake {
+    background-image: url("images/cake.png");
+    background-repeat:no-repeat;
+}
+
+.stickDes {
+    background-image: url("images/stickDes.png");
+    background-repeat:no-repeat;
+}
+
+.footer {
+    background-color:#d85c71;
+    width:auto;
+    height:50px;
+    margin-top:50px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;    
+}
+
+.footer >.info{
+    margin-left:20px;
+    font-size: 0.9em;
+    color:black;
+}
+
